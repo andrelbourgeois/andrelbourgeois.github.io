@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>André Bourgeois</title>
+    <link>http://andrelbourgeois.github.io/</link>
+    <description>Recent content on André Bourgeois</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>© André Bourgeois 2020</copyright><atom:link href="http://andrelbourgeois.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://andrelbourgeois.github.io/about/</link>
+      <pubDate>Fri, 13 Nov 2020 11:04:29 -0500</pubDate>
+      
+      <guid>http://andrelbourgeois.github.io/about/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
