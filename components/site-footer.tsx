@@ -11,8 +11,12 @@ export function SiteFooter() {
       <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
       <ThemeToggle />
         <div className="flex flex-1 items-center justify-end space-x-4">
-          <nav className="flex items-center space-x-1">
-          </nav>
+          <div className="flex items-center space-x-5">
+          <Icons.react className="h-6 w-6" />
+          <Icons.next className="h-5 w-5" />
+          <Icons.tailwind className="h-5 w-6" />
+          <Icons.shadcn className="h-5 w-5" />
+          </div>
         </div>
       </div>
     </header>

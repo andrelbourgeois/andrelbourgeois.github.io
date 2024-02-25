@@ -11,11 +11,11 @@ export const siteConfig = {
     },
     {
       title: "Portfolio",
-      href: "/",
+      href: "/portfolio",
     },
     {
       title: "Contact",
-      href: "/",
+      href: "/contact",
     }
   ],
   links: {
