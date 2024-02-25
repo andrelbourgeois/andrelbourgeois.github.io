@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils"
 import { SiteHeader } from "@/components/site-header"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { ThemeProvider } from "@/components/theme-provider"
+import { SiteFooter } from "@/components/site-footer"
 
 export const metadata: Metadata = {
   title: {
@@ -19,7 +20,16 @@ export const metadata: Metadata = {
     { media: "(prefers-color-scheme: dark)", color: "black" },
   ],
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+        {
+          url: "/light-icon.png",
+          media: "(prefers-colour-scheme: light)",
+        },
+        {
+          url: "/dark-icon.png",
+          media: "(prefers-color-scheme: dark)",
+        }
+    ],
     shortcut: "/favicon-16x16.png",
     apple: "/apple-touch-icon.png",
   },
@@ -44,8 +54,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <div className="relative flex min-h-screen flex-col">
               <SiteHeader />
               <div className="flex-1">{children}</div>
+              <SiteFooter />
             </div>
-            <TailwindIndicator />
+            {/*<TailwindIndicator />*/}
           </ThemeProvider>
         </body>
       </html>
