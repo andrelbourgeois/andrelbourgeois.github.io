@@ -4,7 +4,7 @@ import { siteConfig } from "@/config/site"
 import { buttonVariants } from "@/components/ui/button"
 import Image from "next/image"
 
-export default function IndexPage() {
+export default function ContactPage() {
   return (
     <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
       <div className="flex flex-row items-center space-x-16 ">
@@ -47,4 +47,3 @@ export default function IndexPage() {
     </section>
   )
 }
-
