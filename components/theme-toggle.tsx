@@ -21,5 +21,3 @@ export function ThemeToggle() {
     </Button>
   )
 }
-
-export const theme = useTheme(); // Exporting the theme
