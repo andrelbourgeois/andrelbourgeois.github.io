@@ -5,7 +5,6 @@ import { siteConfig } from "@/config/site"
 import { fontSans } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
 import { SiteHeader } from "@/components/site-header"
-import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { ThemeProvider } from "@/components/theme-provider"
 import { SiteFooter } from "@/components/site-footer"
 
@@ -22,16 +21,16 @@ export const metadata: Metadata = {
   icons: {
     icon: [
         {
-          url: "/light-icon.png",
+          url: "/dark-icon.png",
           media: "(prefers-colour-scheme: light)",
         },
         {
-          url: "/dark-icon.png",
+          url: "/light-icon.png",
           media: "(prefers-color-scheme: dark)",
         }
     ],
-    shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png",
+    shortcut: "/",
+    apple: "/",
   },
 }
 
@@ -56,7 +55,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
               <div className="flex-1">{children}</div>
               <SiteFooter />
             </div>
-            {/*<TailwindIndicator />*/}
           </ThemeProvider>
         </body>
       </html>

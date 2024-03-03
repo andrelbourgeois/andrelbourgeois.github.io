@@ -19,8 +19,16 @@ export const siteConfig = {
     }
   ],
   links: {
+    // personal
     twitter: "/",
     github: "https://github.com/andrelbourgeois",
-    docs: "/",
+    linkedin: "https://www.linkedin.com/in/andrelbourgeois",
+    // documentation
+    react: "https://react.dev",
+    next: "https://nextjs.org",
+    tailwind: "https://tailwindcss.com",
+    shadcn: "https://ui.shadcn.com",
+    //misc
+    docs: "/"
   },
 }

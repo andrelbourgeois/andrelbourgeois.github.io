@@ -2,7 +2,7 @@ import Link from "next/link"
 
 import { siteConfig } from "@/config/site"
 import { buttonVariants } from "@/components/ui/button"
-import Image from "next/image"
+import ThemeAwareLanding from "@/components/theme-aware-image/theme-aware-landing"
 
 export default function IndexPage() {
   return (
@@ -21,7 +21,7 @@ export default function IndexPage() {
             </p>
             <div className="flex gap-4">
           <Link
-            href={siteConfig.links.docs}
+            href={siteConfig.links.github}
             target="_blank"
             rel="noreferrer"
             className={buttonVariants()}
@@ -36,13 +36,9 @@ export default function IndexPage() {
           >
             GitHub
           </Link>
-    </div>
-          </div>
-          <Image
-          src="\Infrastructures-Buildings--Streamline-Milano.svg"
-          width={500}
-          height={500}
-          alt="city scape" />
+     </div>
+      </div>
+        <ThemeAwareLanding />
       </div>
     </section>
   )
