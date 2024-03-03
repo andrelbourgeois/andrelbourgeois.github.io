@@ -15,7 +15,7 @@ export default function PortfolioPage() {
               Future Places Professional.
             </h1>
             <p className="max-w-[700px] text-lg text-muted-foreground">
-              I've built my career on the simple belief that organisations can understand
+              I&apos;ve built my career on the simple belief that organisations can understand
               their own built assets and business processes like Big Tech understands its products
               and services.
             </p>
