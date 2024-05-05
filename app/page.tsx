@@ -8,7 +8,7 @@ export default function IndexPage() {
   return (
     <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
       <h1 className="text-5xl font-extrabold md:text-8xl tracking-widest text-foreground absolute top-20 z-0">
-              I'm André Bourgeois
+              I&apos;m André Bourgeois
               </h1>
       <div className="flex flex-row items-center space-x-28">
         <div className="flex max-w-[980px] flex-col gap-2 space-y-4">
