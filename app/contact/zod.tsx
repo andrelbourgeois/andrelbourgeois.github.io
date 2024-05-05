@@ -52,8 +52,10 @@ export function ContactForm() {
         },
     })
 
+    const FORMSPREE_FORM_ID = "mvoerrqv";
+
     const submit = useSubmit<z.infer<typeof FormSchema>>(
-        process.env.mvoerrqv as string,
+        FORMSPREE_FORM_ID,
         {
           onError(errs) {
             const formErrs = errs.getFormErrors();
@@ -66,7 +68,7 @@ export function ContactForm() {
             const fieldErrs = errs.getAllFieldErrors();
         for (const [field, errs] of fieldErrs) {
           setError(field, {
-            message: errs.map((e) => e.message).join(', '),
+            message: errs.map((e: { message: any; }) => e.message).join(', '),
           });
         }
       },
