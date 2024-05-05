@@ -6,12 +6,12 @@ import { buttonVariants } from "@/components/ui/button"
 
 export default function IndexPage() {
   return (
-    <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
+    <section className="container grid items-center pb-8 pt-6 md:py-10">
       <h1 className="text-5xl font-extrabold md:text-8xl tracking-widest text-foreground absolute top-20 z-0">
               I&apos;m André Bourgeois
               </h1>
-      <div className="flex flex-row items-center space-x-28">
-        <div className="flex max-w-[980px] flex-col gap-2 space-y-4">
+      <div className="flex flex-row items-center justify-between">
+        <div className="flex max-w-[900px] flex-col gap-2 space-y-4">
             <h1 className="text-3xl font-bold leading-tight tracking-tighter md:text-4xl text-foreground">
               Software Developer. <br className="hidden sm:inline" />
               Technology Consultant. <br className="hidden sm:inline" />
@@ -41,10 +41,10 @@ export default function IndexPage() {
           </Link>
           </div>
         </div>
-        <Image className="z-10 p-4"
+        <Image className="z-10 pt-3 pr-2"
           src="./andre-2.svg"
-          width={380}
-          height={380}
+          width={335}
+          height={335}
           alt="Picture of the author"
           /> 
       </div>
