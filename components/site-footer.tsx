@@ -7,9 +7,15 @@ import { Icons } from "@/components/icons"
 
 export function SiteFooter() {
   return (
-    <header className="bg-background sticky top-0 z-40 w-full border-t">
-      <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
-        <div className="flex flex-1 items-center justify-end">
+    <div className="bg-background flex sticky top-0 z-40 w-full">
+      <div className="container flex h-16 items-center justify-between border-t-2 border-color: #000000 space-x-4">
+        <div className="flex items-center w-1/3 justify-start">
+          {/*just here to fill space so the other 2 divs can be aligned correctly.*/}
+        </div>
+        <div className="flex items-center w-1/3 justify-center">
+            <p>© André Bourgeois 2024</p>
+        </div>
+        <div className="flex items-center w-1/3 justify-end">
           <div className="flex items-center">
             <Link
               href={siteConfig.links.react}
@@ -74,6 +80,6 @@ export function SiteFooter() {
           </div>
         </div>
       </div>
-    </header>
+    </div>
   )
 }

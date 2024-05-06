@@ -17,9 +17,9 @@ export default function IndexPage() {
               Technology Consultant. <br className="hidden sm:inline" />
               Future Places Professional.
             </h1>
-            <p className="max-w-[700px] text-lg text-foreground">
-              I&apos;ve built my career on the simple belief that organisations can understand
-              their own built assets and business processes like Big Tech understands its products
+            <p className="max-w-[600px] text-lg text-foreground">
+              I&apos;ve built my career on the simple belief that <span className="text-accent-foreground">organisations can understand
+              their own built assets and business processes</span> like Big Tech understands its products
               and services.
             </p>
             <div className="flex gap-4">
