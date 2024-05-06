@@ -19,8 +19,8 @@ export default function PortfolioPage() {
             <div className="flex gap-4">
           </div>
         </div>
-        <Image className="z-10 p-4"
-          src="./andre-1.svg"
+        <Image className="p-4"
+          src="./andre-3.svg"
           width={280}
           height={280}
           alt="Picture of the author"

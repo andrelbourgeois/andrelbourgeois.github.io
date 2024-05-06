@@ -15,16 +15,6 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
-
 import { Input } from "@/components/ui/input";
 
 const formSchema = z.object({
@@ -71,29 +61,15 @@ export function ContactForm() {
   }
 
   return (
-    <Card className="border-muted-foreground">
-      <Form {...form}>
-        {!submitted ? ( // Render form if not submitted
-          <form onSubmit={form.handleSubmit(onSubmit)} className="pr-20 pl-6 py-6 space-y-4" acceptCharset="UTF-8">
-            <FormField
-              control={form.control}
-              name="firstname"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>First Name</FormLabel>
-                  <FormControl>
-                    <Input placeholder="..." {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <FormField
+    <Form {...form}>
+      {!submitted ? ( // Render form if not submitted
+        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 border-4 px-20 py-10 border-sky-500" acceptCharset="UTF-8">
+          <FormField
             control={form.control}
-            name="lastname"
+            name="firstname"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Last Name</FormLabel>
+                <FormLabel>First Name</FormLabel>
                 <FormControl>
                   <Input placeholder="..." {...field} />
                 </FormControl>
@@ -102,40 +78,52 @@ export function ContactForm() {
             )}
           />
           <FormField
-            control={form.control}
-            name="email"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Email</FormLabel>
-                <FormControl>
-                  <Input placeholder="..." {...field} />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          <FormField
-            control={form.control}
-            name="text"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>Message</FormLabel>
-                <FormControl>
-                  <Input placeholder="..." {...field} />
-                </FormControl>
-                <FormDescription></FormDescription>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-            <Button type="submit">Submit</Button>
-          </form>
-        ) : ( // Render thank you message if submitted
-          <div>
-            <p>Thank you for your submission!</p>
-          </div>
-        )}
-      </Form>
-     </Card> 
+          control={form.control}
+          name="lastname"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Last Name</FormLabel>
+              <FormControl>
+                <Input placeholder="..." {...field} />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="email"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Email</FormLabel>
+              <FormControl>
+                <Input placeholder="..." {...field} />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <FormField
+          control={form.control}
+          name="text"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Message</FormLabel>
+              <FormControl>
+                <Input placeholder="..." {...field} />
+              </FormControl>
+              <FormDescription></FormDescription>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+          <Button type="submit">Submit</Button>
+        </form>
+      ) : ( // Render thank you message if submitted
+        <div>
+          <p>Thank you for your submission!</p>
+        </div>
+      )}
+    </Form>
   );
 }

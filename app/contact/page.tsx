@@ -9,21 +9,24 @@ import { buttonVariants } from "@/components/ui/button"
 export default function ContactPage() {
   return (
     <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
-      <div className="flex flex-row items-center space-x-28">
-        <div className="flex max-w-[980px] flex-col gap-2 space-y-4">
-            <h1 className="text-3xl font-bold leading-tight tracking-tighter md:text-4xl text-foreground">
-              This contact page is currently under <br className="hidden sm:inline" />
-              construction.
-            </h1>
-            <p className="max-w-[700px] text-lg text-foreground">
-
-            </p>
-            <div className="flex gap-4">
-
+      <div className="flex flex-row items-start space-x-2">
+        <div className="flex w-1/2 items-center justify-start">
+          <div className="flex max-w-[980px] flex-col gap-2 space-y-4">
+              <h1 className="text-3xl font-bold leading-tight tracking-tighter md:text-4xl text-foreground absolute top-60 z-10">
+                This contact page is currently under <br className="hidden sm:inline" />
+                construction, but the form still works, <br className="hidden sm:inline" />
+                so please reach out!
+              </h1>
           </div>
+          <Image className=""
+            src="./andre-1.svg"
+            width={300}
+            height={300}
+            alt="Picture of the author"
+            /> 
         </div>
-        <div className="flex max-w-[980px] flex-col items-start gap-2 space-y-4 pl-10">
-                <ContactForm />
+        <div className="flex w-1/2 flex-col items-center gap-2 space-y-4 justify-end pt-2">
+            <ContactForm />
           </div>
       </div>
     </section>
