@@ -29,7 +29,7 @@ export default function IndexPage() {
             rel="noreferrer"
             className={buttonVariants()}
           >
-            Let's Talk
+            Let&apos;s Talk
           </Link>
           <Link
             target="_blank"
