@@ -24,12 +24,12 @@ export default function IndexPage() {
             </p>
             <div className="flex gap-4">
           <Link
-            href={siteConfig.links.github}
+            href="/contact"
             target="_blank"
             rel="noreferrer"
             className={buttonVariants()}
           >
-            Portfolio
+            Let's Talk
           </Link>
           <Link
             target="_blank"
