@@ -1,5 +1,4 @@
-{/*import { ContactForm } from "./formspree"*/}
-import { ContactForm } from "./zod"
+import { ContactForm } from "./contact-form"
 
 import Link from "next/link"
 import Image from "next/image"

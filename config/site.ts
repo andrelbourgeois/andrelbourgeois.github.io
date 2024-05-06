@@ -23,7 +23,8 @@ export const siteConfig = {
     twitter: "/",
     github: "https://github.com/andrelbourgeois",
     linkedin: "https://www.linkedin.com/in/andrelbourgeois",
-    // documentation
+    email: "mailto:andrelbourgeois@gmail.com",
+    // documentation and credit
     react: "https://react.dev",
     next: "https://nextjs.org",
     tailwind: "https://tailwindcss.com",
