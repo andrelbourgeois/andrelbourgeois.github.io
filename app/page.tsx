@@ -6,7 +6,7 @@ import { buttonVariants } from "@/components/ui/button"
 
 export default function IndexPage() {
   return (
-    <section className="container grid items-center pb-8 pt-6 md:py-10">
+    <section className="container grid items-center pb-12 pt-6 md:py-10">
       <h1 className="text-5xl font-extrabold md:text-8xl tracking-widest text-foreground absolute top-20 z-0">
               I&apos;m André Bourgeois
               </h1>
@@ -21,8 +21,8 @@ export default function IndexPage() {
               My expertise lies in translating the high level concepts from
               the development lifecycle of these products into actionable
               strategies, designs, deployments, and integrations that enable
-              businesses to fully realize the benefits of informed and
-              intentional investments in technology.
+              businesses to fully realize the benefits of informed and intentional
+              investments in technology.
             </p>
             <div className="flex gap-4">
           <Link
