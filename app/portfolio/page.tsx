@@ -11,7 +11,8 @@ export default function PortfolioPage() {
         <div className="flex max-w-[980px] flex-col gap-2 space-y-4">
           <h1 className="text-3xl font-bold leading-tight tracking-tighter md:text-4xl text-foreground">
                 This portfolio page is currently under <br className="hidden sm:inline" />
-                construction.
+                construction. For a view of my projects, <br className="hidden sm:inline" />
+                please visit my github.
               </h1>
             <p className="max-w-[700px] text-lg text-foreground">
               
