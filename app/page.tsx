@@ -13,14 +13,16 @@ export default function IndexPage() {
       <div className="flex flex-row items-center justify-between">
         <div className="flex max-w-[900px] flex-col gap-2 space-y-4">
             <h1 className="text-3xl font-bold leading-tight tracking-tighter md:text-4xl text-foreground">
-              Software Developer. <br className="hidden sm:inline" />
-              Technology Consultant. <br className="hidden sm:inline" />
-              Future Places Professional.
+              I help organizations understand their <br className="hidden sm:inline" />
+              built assets and business processes like <br className="hidden sm:inline" />
+              technology products.
             </h1>
             <p className="max-w-[600px] text-lg text-foreground">
-              I&apos;ve built my career on the simple belief that <span className="text-accent-foreground">organisations can understand
-              their own built assets and business processes</span> like Big Tech understands its products
-              and services.
+              My expertise lies in translating the high level concepts from
+              the development lifecycle of these products into actionable
+              strategies, designs, deployments, and integrations that enable
+              businesses to fully realize the benefits of informed and
+              intentional investments in technology.
             </p>
             <div className="flex gap-4">
           <Link
