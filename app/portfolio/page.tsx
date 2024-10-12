@@ -10,9 +10,9 @@ export default function PortfolioPage() {
       <div className="flex flex-row items-center space-x-28">
         <div className="flex max-w-[980px] flex-col gap-2 space-y-4">
           <h1 className="text-3xl font-bold leading-tight tracking-tighter md:text-4xl text-foreground">
-                This portfolio page is currently under <br className="hidden sm:inline" />
-                construction. For a view of my projects, <br className="hidden sm:inline" />
-                please visit my <a className="text-accent-foreground" href="https://github.com/andrelbourgeois">github</a>.
+                I&apos;m in the process of migrating my projects, <br className="hidden sm:inline" />
+                articles, and other content to my website. <br className="hidden sm:inline" />
+                In the meantime, please visit my <a className="text-accent-foreground" href="https://github.com/andrelbourgeois">github</a>.
               </h1>
             <p className="max-w-[700px] text-lg text-foreground">
               
