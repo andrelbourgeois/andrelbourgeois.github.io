@@ -74,7 +74,7 @@ export function ContactForm() {
     <Card className="border-muted-foreground">
       <Form {...form}>
         {!submitted ? ( // Render form if not submitted
-          <form onSubmit={form.handleSubmit(onSubmit)} className="pr-20 pl-6 py-6 space-y-4" acceptCharset="UTF-8">
+          <form onSubmit={form.handleSubmit(onSubmit)} className="pr-6 pl-6 py-6 space-y-4" acceptCharset="UTF-8">
             <FormField
               control={form.control}
               name="firstname"
@@ -82,7 +82,7 @@ export function ContactForm() {
                 <FormItem>
                   <FormLabel>First Name</FormLabel>
                   <FormControl>
-                    <Input placeholder="..." {...field} />
+                    <Input placeholder="..." {...field} className="border-muted-foreground pr-60" />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -95,7 +95,7 @@ export function ContactForm() {
               <FormItem>
                 <FormLabel>Last Name</FormLabel>
                 <FormControl>
-                  <Input placeholder="..." {...field} />
+                  <Input placeholder="..." {...field} className="border-muted-foreground pr-60" />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -108,7 +108,7 @@ export function ContactForm() {
               <FormItem>
                 <FormLabel>Email</FormLabel>
                 <FormControl>
-                  <Input placeholder="..." {...field} />
+                  <Input placeholder="..." {...field} className="border-muted-foreground pr-60" />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -121,7 +121,7 @@ export function ContactForm() {
               <FormItem>
                 <FormLabel>Message</FormLabel>
                 <FormControl>
-                  <Input placeholder="..." {...field} />
+                  <Input placeholder="..." {...field} className="border-muted-foreground pr-60" />
                 </FormControl>
                 <FormDescription></FormDescription>
                 <FormMessage />
