@@ -71,7 +71,7 @@ export function ContactForm() {
   }
 
   return (
-    <Card className="border-muted-foreground">
+    <Card className="border-muted-foreground p-2">
       <Form {...form}>
         {!submitted ? ( // Render form if not submitted
           <form onSubmit={form.handleSubmit(onSubmit)} className="pr-6 pl-6 py-6 space-y-4" acceptCharset="UTF-8">
