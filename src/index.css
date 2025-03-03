@@ -110,4 +110,34 @@
   .badge {
     @apply px-2.5 py-0.5 text-xs font-medium rounded-full;
   }
+
+  /* Animation for Building Bytes cards */
+  .topic-card-hover {
+    @apply transition-all duration-300 hover:translate-y-[-5px] hover:shadow-md;
+  }
+}
+
+/* Custom animations */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-down {
+  from { 
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out forwards;
+}
+
+.animate-slide-down {
+  animation: slide-down 0.5s ease-out forwards;
 }
